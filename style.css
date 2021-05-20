@@ -1,0 +1,795 @@
+:root {
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 48%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+    margin: 0px auto;
+    background-image: url(./images/image-hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top 0px;
+}
+
+/* Header with hamburger menu */
+.header {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+}
+.crowfund {
+    width: 110px;
+    margin: 20px 150px 0 0;
+}
+.dropbtn {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    top: 16px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+.burger {
+    width: 14px;
+}
+
+/* Dropdown menu phone screen */
+.menu {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 280px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 30px auto 0 auto;
+    box-shadow: 1px 1px 20px 2px hsl(0, 0%, 48%); 
+    z-index: 2;
+}
+.submenu {
+    padding: 20px 0 20px 20px;
+}
+.submenu:hover {
+    cursor: pointer;
+}
+.subline {
+    width: 260px;
+    border-top: 1px solid hsl(0, 1%, 84%);
+    border-bottom: 1px solid hsl(0, 1%, 84%);
+}
+.close {
+    display: none;
+}
+
+/* First container with Logo, Bookmark & short text */
+.container1 {
+    width: 280px;
+    height: 230px;
+    margin: 160px auto 0 auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 20px 2px hsl(0, 0%, 91%);
+    border-radius: 5px;  
+}
+
+.logo {
+    position: relative;
+    bottom: 25px;
+    width: 46px;
+}
+.mastercraft {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0px 50px 20px 50px;
+}
+.mastercraftAbout {
+    font-size: 12px;
+    color: var(--dark-gray);
+    margin: 0 20px;
+}
+
+/* Buttons part */
+.button-bookmark {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.project {
+    outline: none;
+    border: none;
+    background-color: var(--moderate-cyan);
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 12px 42px;
+    border-radius: 25px;
+}
+.bookmark {
+    width: 46px;
+    border-radius: 50%;
+    /*filter: opacity(.1);
+    -webkit-filter: opacity(.1);*/
+}
+.btnBookmark {
+    border-radius: 60px;
+    margin-left: 10px;
+    margin-left: 8px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Second container with backed's numbers */
+.container2 {
+    width: 280px;
+    height: 345px;
+    background-color: white;
+    box-shadow: 1px 1px 20px 2px hsl(0, 0%, 91%);
+    border-radius: 5px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.numbers {
+    font-size: 25px;
+    font-weight: 700;
+}
+.number1 {
+    padding-top: 30px;
+}
+.subnumbers {
+    font-size: 11px;
+    color: var(--dark-gray);
+    margin: 6px 0;
+}
+.line {
+    height: 1px;
+    background-color: var(--dark-gray);
+    width: 60px;
+    margin: 20px auto 25px auto;
+}
+.progressline {
+    height: 10px;
+    width: 240px;
+    margin: 30px auto;
+    background: hsl(0, 0%, 93%);
+    border-radius: 10px;
+}
+.greenline {
+    height: 10px;
+    width: 80%;
+    background: var(--moderate-cyan);
+    border-radius: 10px;
+}
+
+
+/* Last container */
+.container3 {
+    width: 280px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 1px 1px 20px 2px hsl(0, 0%, 91%);
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.aboutProject {
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 35px;
+    margin: 20px 0 20px 20px;
+}
+.textProject {
+    font-size: 12px;
+    color: var(--dark-gray);
+    margin: 0 20px 30px 20px;
+    line-height: 1.25rem;
+}
+
+.subcontainer {
+    width: 240px;
+    margin: 20px auto;
+    border: 1px solid hsl(0, 1%, 84%);
+    border-radius: 5px;
+}
+
+.subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 18px 0 5px 20px;
+}
+.pledge {
+    color: var(--moderate-cyan);
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 20px 20px;
+}
+.subtext {
+    font-size: 12px;
+    color: var(--dark-gray);
+    margin: 0 22px 20px 20px;
+    line-height: 1.3rem;
+}
+.left span {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--black);
+}
+.left {
+    font-size: 12px;
+    color: var(--dark-gray);
+    margin: 0 0 20px 20px;
+}
+.reward {
+    outline: none;
+    border: none;
+    background-color: var(--moderate-cyan);
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 14px 30px;
+    border-radius: 25px;
+    margin: 0 0 20px 20px;
+}
+.outOfSotck {
+    background-color: var(--dark-gray);
+}
+.reward:hover {
+    cursor: pointer;
+}
+.outOfSotck:hover {
+    cursor: not-allowed;
+}
+
+
+/* Modal Container */
+.select-modal {
+    width: 280px;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 2;
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    box-shadow: 100px 100px 100px 1000px rgba(122, 122, 122, 0.500);
+
+}
+.modal-title {
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 35px;
+    margin: 20px 0 20px 20px;
+}
+.crossgray {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    top: -45px;
+    left: 220px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+.close-modal {
+
+    top: -52px;
+    left: 240px;
+}
+.modal-about {
+    font-size: 12px;
+    color: var(--dark-gray);
+    margin: 0 20px 30px 20px;
+    line-height: 1.25rem;
+}
+.modal-container {
+    width: 240px;
+    margin: 20px auto;
+    border: 1px solid hsl(0, 1%, 84%);
+    border-radius: 5px;
+}
+
+/* Modal input type checkbox */
+.checkbox {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+.checkbox:checked {
+    background-color: var(--moderate-cyan);
+    border: 5px solid white;
+    box-shadow: 0px 0px 1px 0px black;
+}
+
+/* Modal text */
+.modal-subtitle {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px 0 5px 30px;
+    margin-top: -25px;
+} /* Name of offer */
+.nomoove {
+    margin-top: -15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.pdg {
+    margin-left: 30px;
+} /* cyan amount of pledge */
+.modal-subtext {
+    font-size: 12px;
+    color: var(--dark-gray);
+    margin: 0 35px 20px 20px;
+    line-height: 1.3rem;
+}
+.modal-left span {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.modal-disabled, .subcontainer-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+} /* last container disabled */
+
+
+
+
+
+/* pledge amount part */
+.enterPledge {
+    display: none;
+} /* whole container */
+.show {
+    display: block;
+}
+.linePledge {
+    height: 1px;
+    background-color: hsl(0, 1%, 84%);
+    width: 100%;
+}
+.yourPledge {
+    font-size: 12px;
+    color: var(--dark-gray);
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+.flexwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+}
+input[type=number] {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid hsl(0, 1%, 84%);
+    border-radius: 25px;
+    padding: 10px 0px;
+    width: 80px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+}
+.pledge-btn {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--moderate-cyan);
+    border: 0px;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 0px;
+    width: 90px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* Message when you validate pledge amount */
+.thanks {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    box-shadow: 100px 200px 2000px 2000px rgba(122, 122, 122, 0.500);
+}
+.validate {
+    padding-top: 25px;
+    width: 50px;
+}
+.thanks-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 20px 0;
+}
+.thanks-text {
+    font-size: 12px;
+    color: var(--dark-gray);
+    line-height: 1.2rem;
+    margin: 0 20px 30px 20px;
+}
+.gotit {
+    outline: none;
+    border: none;
+    background-color: var(--moderate-cyan);
+    color: white;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 12px 22px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 600px) {
+body {
+    background-image: url(./images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+}
+.main-container {
+    width: 90%;
+    background-image: none;
+}
+
+/* Header part */
+.header {
+    width: 85%;
+    margin-top: 30px;
+}
+.crowfund {
+    width: 130px;
+}
+.burger {
+    display: none;
+}
+.menu {
+    display: flex;
+    background-color: unset;
+    box-shadow: none;
+    color: white;
+    position: relative;
+    top: -20px;
+    left: 84.5%;
+    transform: translateX(-50%);
+    float: left;
+    font-size: 13px;
+    width: 300px;
+    margin: 0px 60px 0 0;
+}
+.submenu {
+    padding: 0px 0 0px 30px;
+}
+.subline {
+    border: none;
+    width: 80px;
+}
+
+/* First container */
+.logo {
+    width: unset;
+}
+.container1 {
+    width: 56%;
+    height: 100%;
+    margin-top: 240px;
+}
+.mastercraft{
+    font-size: 28px;
+}
+.mastercraftAbout {
+    font-size: 16px;
+}
+.button-bookmark {
+    width: 87%;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 0 0 45px 0;
+}
+.project {
+    width: 200px;
+    height: 56px;
+    border-radius: 50px;
+    justify-content: space-around;
+}
+.bookmark {
+    width: 56px;
+}
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+/* 2nd container */
+.container2 {
+    width: 56%;
+    display: grid;
+    grid-template-columns: 15.76vw 15.76vw 12.430vw;
+    grid-template-rows: 150px 100px;
+    text-align: left;
+    height: 210px;
+}
+.numbers {
+    font-size: 2.22vw;
+}
+.number1 {
+    padding-top: 0px;
+}
+.subnumbers {
+    font-size: 1.041vw;
+}
+.line {
+    display: none;
+}
+.backed {
+    margin: 50px 20px 0 46px;
+    width: 190px;
+    grid-row: 1;
+    grid-column: 1;
+}
+.total {
+    margin: 50px 20px 0 46px;
+    width: 228px;
+    grid-row: 1;
+    grid-column: 2;
+}
+.dayleft {
+    margin: 50px 0 0 46px;
+    grid-row: 1;
+    grid-column: 3;
+}
+.progressline {
+    width: 43.75vw;
+    margin: 0 40px 0px 3.19vw;
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+
+/* 3rd container */
+.container3 {
+    width: 56%;
+}
+.aboutProject {
+    font-size: 20px;
+    margin: 0px 0px 40px 46px;
+}
+.textProject {
+    font-size: 16px;
+    margin: 0px 40px 40px 46px;
+    line-height: 2rem;
+}
+
+.subcontainer {
+    width: 87%;
+}
+.subtitle {
+    font-size: 19px;
+    margin: 35px 0 0 30px;
+}
+.pledge {
+    font-size: 15px;
+    position: relative;
+    right: 30px;
+    top: -20px;
+    float: right;
+    height: 0px;
+}
+.subtext {
+    font-size: 16px;
+    margin: 20px 20px 30px 30px;
+    line-height: 1.8rem;
+}
+.left {
+    margin-left: 30px;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.left span {
+    font-size: 32px;
+    margin-right: 6px;
+}
+.reward {
+    position: relative;
+    top: -86px;
+    right: 30px;
+    float: right;
+    padding: 16px 34px;
+    font-size: 14px;
+}
+
+/* Modal selection */
+.select-modal {
+    width: 51%;
+    top: 180px;
+}
+.modal-container {
+    width: 86%;
+}
+.modal-title {
+    font-size: 24px;
+    margin: 15px 0 20px 50px;
+}
+.crossgray {
+    float: right;
+    position: relative;
+    right: 50%;
+    left: -22px;
+    top: -60px;
+}
+.modal-about {
+    font-size: 16px;
+    margin: 0px 0 30px 50px;
+}
+
+/* Pledge containers */
+.checkbox {
+    width: 1.8em;
+    height: 1.8em;
+    margin-top: 0px;
+}
+label {
+    display: flex;
+}
+.modal-subtitle {
+    font-size: 16px;
+    margin-top: -25px;
+    margin-left: 45px;
+}
+.pdg {
+    margin-top: -5px;
+    margin-left: 45px;
+    font-size: 16px;
+}
+.modal-subtext {
+    font-size: 15px;
+    margin: 0 26px 35px 75px;
+}
+.modal-left {
+    position: relative;
+    top: -80%;
+    transform: translateY(-80%);
+    right: 30px;
+    float: right;
+}
+.modal-left span {
+    font-size: 18px;
+}
+
+/* Enter your pledge part */
+.yourPledge {
+    font-size: 15px;
+    position: relative;
+    float: left;
+    left: 28px;
+    top: 20px;
+    height: 0px;
+}
+.flexwrapper {
+    width: 95%;
+    justify-content:flex-end;
+    margin: 0px 0px 25px 0px;
+    vertical-align: middle;
+}
+input[type=number] {
+    padding: 15px 0px;
+    width: 100px;
+    font-size: 14px;
+}
+.pledge-btn {
+    width: 100px;
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+
+
+/* Thank you message */
+.thanks {
+    width: 37.5%;
+    top: 470px;
+}
+.validate {
+    width: 5.5rem;
+    margin-top: 25px;
+}
+.thanks-title {
+    font-size: 24px;
+    margin-top: 40px;
+    margin: 40px 20px 20px 20px;
+}
+.thanks-text {
+    font-size: 16px;
+    margin: 0 40px 30px 40px;
+    line-height: 1.8rem;
+}
+.gotit {
+    font-size: 14px;
+    width: 110px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+}
+
+@media (min-width:600px) and (max-width:950px) {
+.container1 {
+    width: 90%;
+}
+.container1, .container2, .container3 {
+    width: 90%;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 30.76vw 27.76vw 17.430vw;
+    grid-template-rows: 150px 100px;
+}
+.numbers {
+    font-size: 28px;
+}
+.subnumbers {
+    font-size: 13px;
+}
+.progressline {
+    width: 73.75vw;
+}
+
+.select-modal {
+    width: 81%;
+}
+
+.thanks {
+    width: 50%;
+}
+}

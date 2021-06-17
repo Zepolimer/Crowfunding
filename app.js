@@ -44,6 +44,7 @@ dropDownBtn.addEventListener('click', () => {
 })
 
 
+
 // Back this project : show pledge's choices 
 backProject.addEventListener('click', () => {
     document.body.scrollTop = 0;
@@ -139,11 +140,3 @@ selectReward.forEach(btn => btn.addEventListener('click', () => {
         modalContainer.style.display="none";
     }
 }))
-
-if (screen.width > 600) {
-    dropDownBtn = null;
-    hamburger = null;
-    wrapperMenu.style.display="flex";
-} else {
-    wrapperMenu.style.display="none";
-}

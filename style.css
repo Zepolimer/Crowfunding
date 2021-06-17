@@ -490,10 +490,11 @@ body {
     width: 130px;
 }
 .burger {
-    display: none;
+    display: none !important;
 }
+
 .menu {
-    display: flex;
+    display: flex !important;
     background-color: unset;
     box-shadow: none;
     color: white;

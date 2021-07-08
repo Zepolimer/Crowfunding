@@ -32,14 +32,14 @@ const btnthanks = document.querySelector('.gotit');
 
 // DROPDOWN MENU 
 dropDownBtn.addEventListener('click', () => {
-    if (wrapperMenu.style.display==="none") {
-        wrapperMenu.style.display="block";
-        hamburger.style.display="none";
-        cross.style.display="block";
-    } else {
+    if (wrapperMenu.style.display=="block") {
         wrapperMenu.style.display="none";
         hamburger.style.display="block";
         cross.style.display="none";
+    } else {
+        wrapperMenu.style.display="block";
+        hamburger.style.display="none";
+        cross.style.display="block";
     }
 })
 
@@ -49,17 +49,17 @@ dropDownBtn.addEventListener('click', () => {
 backProject.addEventListener('click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    if(modalContainer.style.display==="none") {
-        modalContainer.style.display="block";
-    } else {
+    if(modalContainer.style.display==="block") {
         modalContainer.style.display="none";
+    } else {
+        modalContainer.style.display="block";
     }
 })
 
 
 // Back this project : close the window with the cross
 grayClose.addEventListener('click', () => {
-    if(modalContainer.style.display==="block") {
+    if(modalContainer.style.display=="block") {
         modalContainer.style.display="none";
     } else {
         modalContainer.style.display="block";
@@ -134,9 +134,9 @@ btnthanks.addEventListener('click', () => {
 selectReward.forEach(btn => btn.addEventListener('click', () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    if(modalContainer.style.display==="none") {
-        modalContainer.style.display="block";
-    } else {
+    if(modalContainer.style.display=="block") {
         modalContainer.style.display="none";
+    } else {
+        modalContainer.style.display="block";
     }
 }))
